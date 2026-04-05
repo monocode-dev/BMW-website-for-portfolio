@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <span class="logo">BMW</span>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#models">Models</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <section id="hero">
+        <div class="hero-text">
+            <h1>Pure Performance, Pure Luxury.</h1>
+            <p>Engineered for those who demand precision, power, and elegance in every drive.</p>
+            <a href="#models" class="cta">Explore Models</a>
+        </div>
+    </section>
+
+
+    <section id="about">
+        <div class="pic1">
+            <h2>The Ultimate Driving Machine</h2>
+            <p>Since 1916, BMW has been engineering vehicles that push the limits of performance and luxury. Every car we build carries over a century of passion, precision, and innovation.</p>
+        </div>
+        <div class="pic2">
+            <h2>Every curve designed with purpose.</h2>
+            <p>BMW isn't just a car — it's an experience. Designed for those who demand more from every drive, every corner, and every moment behind the wheel.</p>
+        </div>
+    </section>
+
+
+    <section id="models">
+            <div class="model-cont">
+                <div class="picc" id="m3"></div>
+                <h3>BMW M3</h3>
+                <a href="#" class="btn">Explore</a>
+            </div>
+
+            <div class="model-cont">
+                <div class="picc" id="m5"></div>
+                <h3>BMW M5</h3>
+                <a href="#" class="btn">Explore</a>
+            </div>
+
+            <div class="model-cont">
+                <div class="picc" id="x5"></div>
+                <h3>BMW X5</h3>
+                <a href="#" class="btn">Explore</a>
+            </div>
+
+            <div class="model-cont">
+                <div class="picc" id="s7"></div>
+                <h3>BMW 7 Series</h3>
+                <a href="#" class="btn">Explore</a>
+            </div>
+
+            <div class="model-cont">
+                <div class="picc" id="z4"></div>
+                <h3>BMW Z4</h3>
+                <a href="#" class="btn">Explore</a>
+            </div>
+    </section>
+
+    <section id="contact">
+        <h2>Let's Get in Touch</h2>
+        <p>Whether you have a question about our products, a partnership proposal, or just want to share your passion, we're here to listen.</p>
+        <div class="form">
+            <h3>Leave us a message.</h3>
+            <span class="inputarea">
+            <input type="text" placeholder="Your Name">
+            <input type="text" placeholder="Your Email">
+            </span>
+            <textarea name="text" id="text" placeholder="Your message" rows="3" cols="44"></textarea>
+            <button class="btn">SEND MESSAGE</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 BMW</p>
+    </footer>
+<script>
+        const nav = document.querySelector("nav");
+
+        window.addEventListener("scroll", () => {
+        const scroll = window.scrollY;
+        const opacity = Math.max(0.3, 1 - scroll / 500);
+        nav.style.background = `linear-gradient(
+            180deg,
+            rgba(0,46,116,${opacity}),
+            rgba(0,29,61,${opacity})
+        )`;
+        });
+
+</script>
+</body>
+</html>
